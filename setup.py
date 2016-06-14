@@ -50,7 +50,7 @@ else:
 
 # Locate the re2 module
 _re2_prefixes = [
-    os.environ['RE2_HOME'],
+    os.environ.get('RE2_HOME', ''),
     '/usr',
     '/usr/local',
     '/opt/',
